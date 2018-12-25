@@ -3,7 +3,7 @@ import socket
 import subprocess
 import time
 import getpass
-host = "80.210.76.214"
+host = ""
 port = 21
 password = 'n0tm1ne'
 
