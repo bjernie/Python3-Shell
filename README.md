@@ -5,7 +5,7 @@ Reverse shell for mac and windows
 
 Change the ip-address to your own ip-address
 
-use  
+use '''pyinstaller --onefile --windowed'''
 
 
 
