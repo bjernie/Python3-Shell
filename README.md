@@ -3,9 +3,10 @@ Reverse shell for Mac and Windows
 It works in both python2 and python3
 
 TODO:
-Create a password stealer
-Create file downloader
+Create a password stealer, 
+Create file downloader, 
 Maybe create server side
+
 # Shell for Windows
 
 Change the ip-address and port to yours
