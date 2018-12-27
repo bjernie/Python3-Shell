@@ -1,3 +1,4 @@
+REM ducky script for Windows
 DELAY 500
 GUI r
 DELAY 50
