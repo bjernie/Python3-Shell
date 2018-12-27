@@ -24,6 +24,8 @@ It will compile to a Dist folder
 To gain access use netcat with the following command:
     
     nc -l yourport
+    
+This listens for the port you gave it
 
 # Shell for OSX
 
@@ -40,6 +42,7 @@ To gain access use netcat with the following command:
     
     nc -l yourport
 
+This listens for the port you gave it
 
 # Shell for Windows with USB Rubber ducky/Malduino
 
