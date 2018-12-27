@@ -4,7 +4,7 @@ import socket
 import subprocess
 import time
 import getpass
-host = "80.210.76.214"
+host = ""
 port = 44444
 password = 'n0tm1ne'
 # todo openscource den bare for sjov
