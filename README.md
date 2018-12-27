@@ -3,9 +3,10 @@ Reverse shell for mac and windows
 
 # Shell for Windows
 
-Change the ip-address to your own ip-address
+Change the ip-address and port to what you need
 
-use '''pyinstaller --onefile --windowed'''
+Use
+    pyinstaller --onefile --windowed
 
 
 
