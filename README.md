@@ -6,6 +6,7 @@ Reverse shell for mac and windows
 Change the ip-address and port to what you need
 
 Use
+
     pyinstaller --onefile --windowed
 
 
