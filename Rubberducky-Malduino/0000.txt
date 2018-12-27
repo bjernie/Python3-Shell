@@ -21,7 +21,7 @@ SHIFT 7
 SHIFT 7
 STRING yourip
 SHIFT .
-STRING yourport
+STRING your apache/ngingx port
 SHIFT 7
 STRING windowsoperator.exe
 SHIFT 2
