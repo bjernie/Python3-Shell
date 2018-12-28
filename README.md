@@ -48,3 +48,5 @@ This listens for the port you gave it
 # Shell for Windows with USB Rubber ducky/Malduino
 
 Only works for the Danish keyboard, but it should'nt take more than a couple of minutes to make it compatible with your keyboard
+
+put your file onto an apache/ngninx server
