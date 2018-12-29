@@ -1,6 +1,7 @@
 import tkinter
 from PIL import ImageTk, Image
 import os
+from tkinter import font
 size = ['440', '165']
 
 
@@ -11,7 +12,7 @@ def getpass():
 
 mainwindow = tkinter.Tk()
 mainwindow.geometry(size[0]+'x'+size[1])
-mainwindow.title('Safari skal bruge din adgangskode')
+mainwindow.title('Safari')
 
 pwdfield = tkinter.Entry(mainwindow, width=27, show='•')
 pwdfield.place(x=165, y=80)
@@ -34,8 +35,10 @@ spec.config(font=('Lucida Grande bold', 14))
 spec.place(x=90, y=20)
 
 
-image = ImageTk.PhotoImage(Image.open('/compass.jpg'.format(os.getcwd())))
-panel = tkinter.Label(mainwindow, image=image)
+image = Image.open('{}/compass.jpg'.format(os.getcwd()))
+image = image.resize((50, 50), Image.ANTIALIAS)
+
+panel = tkinter.Label(mainwindow, image=ImageTk.PhotoImage(image))
 panel.pack()
 panel.place(x=0, y=0)
 

